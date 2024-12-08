@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Posisi Matahari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Posisi Matahari</h1>
+        <form id="calculator-form">
+            <div class="form-group">
+                <label for="date">Tanggal:</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Waktu:</label>
+                <input type="time" id="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="latitude">Lintang (Latitude):</label>
+                <input type="number" id="latitude" step="any" placeholder="Contoh: -6.1751" required>
+            </div>
+
+            <div class="form-group">
+                <label for="longitude">Bujur (Longitude):</label>
+                <input type="number" id="longitude" step="any" placeholder="Contoh: 106.8650 (Timur) atau -106.8650 (Barat)" required>
+            </div>
+
+            <button type="submit">Hitung</button>
+        </form>
+
+        <div id="result">
+            <p id="sun-position"></p>
+            <canvas id="sun-chart"></canvas>
+        </div>
+
+        <div id="loading" class="loading">Loading...</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

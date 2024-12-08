@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://cdn.pixabay.com/photo/2017/08/08/00/33/constellations-2609647_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+input, button {
+    padding: 14px;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 30px;
+}
+
+canvas {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+}
+
+#loading {
+    display: none;
+    font-size: 1.5em;
+    color: #FF9800;
+    margin-top: 20px;
+}
+
+
+

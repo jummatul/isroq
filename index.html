@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perhitungan Pergantian Musim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Perhitungan Durasi Siang dan Malam</h1>
+    <p>Masukkan tanggal dan lintang untuk menghitung panjang siang dan malam.</p>
+  </header>
+  
+  <main>
+    <section class="input-section">
+      <label for="latitude">Lintang (°): </label>
+      <input type="number" id="latitude" placeholder="Masukkan lintang pengamat" />
+      
+      <label for="date">Tanggal (YYYY-MM-DD): </label>
+      <input type="date" id="date" />
+      
+      <button id="calculateBtn">Hitung</button>
+    </section>
+    
+    <section class="result-section">
+      <h2>Hasil Perhitungan:</h2>
+      <p id="result">Masukkan data untuk melihat hasil perhitungan.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; Jummatul Isroq 2024</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
